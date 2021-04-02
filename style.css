@@ -157,14 +157,14 @@ p, div, body {
 }
 /************************/
 
-.divadd1,
-.divadd2,
-.divadd3 {
+.div22,
+.div23,
+.div24 {
 	display: none;
 }
-.name1-active .divadd1,
-.name2-active .divadd2,
-.name3-active .divadd3 {
+.name1-active .div22,
+.name2-active .div23,
+.name3-active .div24 {
 	display: block;
 	margin-left: 10px;
 }

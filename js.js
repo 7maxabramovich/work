@@ -55,7 +55,7 @@ for(let i=0; i<tr_list.length; i++){
 
 
 //*********//
-let json = '[{"add":"add1", "age":"age1", "family":"family1", "job":"job1", "edu":"edu1"}, {"add":"add2", "age":"age2", "family":"family2", "job":"job2", "edu":"edu2"}, {"add":"add3", "age":"age3", "family":"family3", "job":"job3", "edu":"edu3"}]';
+let json = '[{"add":"21.05.2018", "age":"22", "family":"женат", "job":"Фора, кассир", "edu":"Высшее, НТУУ КПИ, Финансы и кредит"}, {"add":"22.05.2018", "age":"23", "family":"холост", "job":"Фора, охранник", "edu":"Высшее, НТУУ КПИ, Бухгалтерский учёт"}, {"add":"23.05.2018", "age":"24", "family":"женат", "job":"Фора, водитель", "edu":"Высшее, НТУУ КПИ, Економика предприятия"}]';
 let jsonParse = JSON.parse(json);
 for (let key in jsonParse) {
   let p1 = document.createElement('p');
@@ -64,7 +64,7 @@ for (let key in jsonParse) {
   let p4 = document.createElement('p');
   let p5 = document.createElement('p');
   let div = document.createElement('div');
-  div.className = "div" + jsonParse[key].add;
+  div.className = "div" + jsonParse[key].age;
   p1.innerHTML = "Добавлен: " + jsonParse[key].add;
   p2.innerHTML = "Возраст: " + jsonParse[key].age;
   p3.innerHTML = "Семейное положение: " + jsonParse[key].family;
@@ -78,7 +78,7 @@ for (let key in jsonParse) {
   $('.input').append(div);
 };
 
-
+console.log(jsonParse)
 
 //*************    end document ready    *********//
 });
