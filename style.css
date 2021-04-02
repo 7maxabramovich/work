@@ -1,0 +1,245 @@
+p, div, body {
+	margin: 0;
+	padding: 0;
+}
+.content-block {
+    margin: 10px 0;
+	border-left: 1px solid;
+}
+.content-block__wrap {
+	display: flex;
+	border-bottom: 1px solid;
+	border-right: 1px solid;
+}
+.content-block__wrap-1 {
+	border-top: 1px solid;	
+}
+.content-block__wrap__c-1{
+	background: #07B; 
+	width: 100%;
+}
+.content-block__wrap__c-23 {
+	background: #0d2; 
+}
+.content-block__wrap__c-45 {
+	background: #F63;
+}
+.content-block__wrap__c-2345 {
+	display: flex; 
+}
+.content-block p {
+	padding: 0 5px;
+}
+.content-block__wrap__c-2345__item-2345 {
+	border-left: 1px solid;
+	width: 100px;
+}
+@media (max-width: 495px) {
+	.content-block__wrap__c-2345 {
+		display: block;
+	}
+	.content-block__wrap__c-45-1 {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.content-block__wrap__c-45-1__item-4-1 {
+		height: 100%;
+	}
+	.content-block__wrap__c-2345__item-35 {
+		border-top: 1px solid;	
+	}
+}
+
+
+/************************/
+
+.content-block2 {
+	margin: 50px 0;
+	border-left: 1px solid;
+	border-top: 1px solid;
+	overflow: auto;
+}
+.content-block2 p {
+	padding: 5px;
+	font-style: italic;
+}
+.content-block2__1-5 {
+	display: flex;
+}
+.content-block2__1-5 div {
+	width: 19.92%;
+	border-right: 1px solid;
+    border-bottom: 1px solid;
+	min-width: 199px;
+}
+.content-block2__head p {
+	font-weight: bold;
+	font-style: inherit;
+}
+.content-block2__1-5 .content-block2__1-5__first {
+	font-style: inherit;	
+}
+.content-block2 .name {
+	width: 33%;
+}
+.content-block2 .d_f {
+	display: flex;
+	justify-content: space-between;
+	border: none;
+	width: 67%;
+}
+.content-block2 .d_f div {
+	width: 50%;
+}
+.content-block2 .w_500 {
+	width: 60%;
+    display: flex;
+	border: none;
+	min-width: 600px;
+}
+.w_100 {
+	display: none;
+}
+.w_100_1 {
+	display: none;
+}
+
+.content-block2-active .w_500 {
+	display: block;
+	width: 600px;
+}
+.content-block2-active .name {
+	width: 600px;
+	border-bottom: none;
+}
+.content-block2-active .d_f {
+	width: 601px;
+}
+.content-block2-active .d_f div{
+	border-right: none;
+}
+.content-block2-active .none {
+	display: none;
+}
+.content-block2-active .t_r {
+	text-align: right;
+}
+.content-block2-active .d_f .t_r {
+	border-right: 1px solid;
+}
+.content-block2-active .b_b {
+	border-bottom: 1px solid;
+}
+.content-block2-active .w_100 {
+	display: block;
+	width: 100%;
+	min-width: 200px;
+}
+.content-block2-active .w_100_1 {
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid;
+    border-right: 1px solid;
+	min-width: 200px;
+	position: relative;
+	background: #CE8;
+    border-left: 1px solid;
+}
+.content-block2-active .flex {
+	display: flex;
+}
+.content-block2-active .x {
+	position: absolute;
+    right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/************************/
+
+.divadd1,
+.divadd2,
+.divadd3 {
+	display: none;
+}
+.name1-active .divadd1,
+.name2-active .divadd2,
+.name3-active .divadd3 {
+	display: block;
+}
+.w_500_1,
+.w_500_2,
+.w_500_3 {
+	cursor: pointer;
+}
+.content-block2-active .w_500_1-active,
+.content-block2-active .w_500_2-active,
+.content-block2-active .w_500_3-active {
+	background: #CE8;
+}
+.tri {
+	display: none;
+}
+.content-block2-active .content-block2__1-5 {
+    align-items: center;
+	position: relative;
+}
+.content-block2-active .w_500_1-active .tri,
+.content-block2-active .w_500_2-active .tri,
+.content-block2-active .w_500_3-active .tri {
+	display: block;
+    position: absolute;
+    width: 4px;
+    min-width: auto;
+    border: 1px solid;
+    left: 600px;
+    z-index: 1;
+	border: 10px solid transparent;
+    border-left: 10px solid;
+}
+.content-block2-active .w_500_1-active .tri:after,
+.content-block2-active .w_500_2-active .tri:after,
+.content-block2-active .w_500_3-active .tri:after {
+	content: "";
+	display: block;
+    position: absolute;
+    width: 4px;
+    min-width: auto;
+    border: 1px solid;
+    z-index: 1;
+	border: 8px solid transparent;
+    border-left: 8px solid #0d2;
+	top: -8px;
+    left: -9px;
+}
+
+
+/*.overflow {
+	overflow: auto;
+}
+.overflow__table {
+	width: 100%;
+    margin: 50px 0;
+    border-collapse: collapse;
+}
+.overflow__table td {
+	border: 1px solid;
+}
+.overflow__table p {
+	padding: 5px;
+	font-style: italic;
+}
+.overflow__table__head p {
+	font-style: inherit;
+	font-weight: bold;
+}
+.overflow__table .overflow__table__first {
+	font-style: inherit;	
+}
+
+.overflow__table2 {
+	
+}
+.overflow__table2 .attention {
+	display: none;	
+}*/
